@@ -47,6 +47,11 @@ optional arguments:
   -f FONT, --font FONT              html font
   -i IN, --in IN                    image to convert
   -o OUT, --out OUT                 output file
+
+
+例如
+
+img2html -i mnls.jpg -o test.html
 ```
 
 
@@ -68,7 +73,7 @@ with open("mnls.html", mode='w', encoding="utf-8") as f:
 ---
 
 ```
-$ pip install git@github.com:lzjun567/img2html.git --upgrade
+$ pip install git+https://github.com/lzjun567/img2html
 ```
 
 
