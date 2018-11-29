@@ -23,7 +23,7 @@
 
 ![./demo/mnls.jpg](./demo/mnls.jpg)
 
-转化成网页的效果，直接看[链接地址](./demo/mnls.html)效果可能更明显
+转化成网页的效果，直接看[链接地址](./demo/mnls.html)，你能看到网页的源代码
 
 ![./demo/mnls.jpg](./demo/after.png)
 
