@@ -15,16 +15,19 @@
                        \_/__/
 ```
 
-
-### 示例
-
-转换后的 HTML 页面： [https://xlzd.me/hide/img2html/](https://xlzd.me/hide/img2html/)
+原作者  [xlzd](https://github.com/xlzd)，这个fork版本支持Python3
 
 
-原始图片             |  转换后
-:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/xlzd/img2html/master/demo/before2.jpg)  |  ![](https://raw.githubusercontent.com/xlzd/img2html/master/demo/after2.png)
-![](https://raw.githubusercontent.com/xlzd/img2html/master/demo/before.png)  |  ![](https://raw.githubusercontent.com/xlzd/img2html/master/demo/after.png)
+
+原始图片
+
+![./demo/mnls.jpg](./demo/mnls.jpg)
+
+转化成网页的效果，直接看[链接地址](./demo/mnls.html)效果可能更明显
+
+![./demo/mnls.jpg](./demo/after.png)
+
+
 
 ### 使用方式
 ---
@@ -52,35 +55,20 @@ optional arguments:
 ```Python
 from img2html.converter import Img2HTMLConverter
 
-converter = Img2HTMLConverter(*some config here*)
-html = converter.convert(*image_path*)
+converter = Img2HTMLConverter(char='爱')
+html = converter.convert("mnls.jpg")
 
-# done, so easy.
+with open("mnls.html", mode='w', encoding="utf-8") as f:
+    f.write(html)
+
 ```
 
 
 ### 安装
 ---
 
-`img2html` 已经上传到了 [PYPI](https://pypi.python.org/pypi/img2html)，所以最简单的安装方式就是使用 pip：
-
 ```
-$ pip install img2html
-```
-
-更新：
-
-```
-$ pip install img2html --upgrade
-```
-
-
-当然，你也可以通过源码安装：
-
-```
-$ git clone https://github.com/xlzd/img2html.git
-$ cd img2html
-$ python setup.py install
+$ pip install git@github.com:lzjun567/img2html.git --upgrade
 ```
 
 
